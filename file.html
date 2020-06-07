@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta names="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+*{
+	box-sizing: border-box;
+}
+h1{
+	margin-bottom: 15px;
+}
+p{
+	border: 1px solid black;
+	background-color: #A9A9A9;
+	width: 50%;
+	height: 130px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Helvetica;
+	color: black;
+
+}
+
+.row{
+	width: 100%;
+}
+
+@media (min-width: 1200px){
+	.col-lg-1, .col-lg-2 ,.col-lg-3{
+		float:left;
+		
+	.col-lg-1{
+		width:8.33%;
+	}
+	.col-lg-2{
+		width: 16.66%;
+	}
+	.col-lg-3{
+		width: 25%;
+	}
+}
+
+@media (min-width: 950px) and (max-width: 1199px) {
+	.col-md-1,.col-md-2,.col-md-3{
+		float: left;
+	}
+	.col-md-1{
+		width: 8.33%;
+	}
+	.col-md-2{
+		width: 16.66%;
+	}
+	.col-md-3{
+		width: 25%;
+	}
+}
+
+</style>
+</head>
+<body>
+	<h1 style="text-align: center;">Three monuments of India</h1>
+
+	<div class="row">
+		<div class="col-lg-1 col-md-1"><p>Taj Mahal, Agra is a beautiful white marble Monument on the banks of the holy river Yamuna in the state of Uttar Pradesh. </p></div>
+        <div class="col-lg-2 col-md-2"><p>Mysore Palace, Mysore.The Palace of Mysore is the most famous historical monument, located in the city of Mysore in Karnataka and one of the most visited monuments in India.</p></div>
+        <div class="col-lg-3 col-md-3"> <p>Harmandir Sahib, Amritsar.The Golden Temple is known as Harmandir Sahib is a Sikh Gurdwara located in the Amritsar, Punjab.</p></div>
+
+</div>		
+</body>
+</html>
